@@ -63,7 +63,7 @@ En la terminal de VS Code ejecuta:
 Ahora activa el entorno:
 `.venv\Scripts\Activate.ps1`
 
-## Instalando bibliotecas
+## Instalando bibliotecas: REQUEST y PYTHON-DOTENV
 
 `pip install requests python-dotenv`
 ¿Qué estamos instalando?
@@ -91,3 +91,46 @@ Aquí necesitamos comprender dos herramientas:
 - refactor: para reorganización del código.
 
 `pip freeze > requirements.txt` Esto registra las bibliotecas instaladas en tu entorno virtual.
+
+## PASOS PARA GITHUB
+Crear nuestro repositorio en GitHub
+Ahora vamos a conectar nuestro proyecto local con GitHub.
+Paso 10. Crear el repositorio remoto
+1. Entra a GitHub.
+2. Inicia sesión.
+3. Haz clic en el botón New repository.
+4. Configúralo así:
+Configuración recomendada
+
+Ejemplo de cómo crear tu repositorio.
+Repository namepractica-programa-sincrono
+
+DescriptionPrimera práctica de Python: programación síncrona y consumo de APIs.
+
+Visibility
+Public
+
+Te recomiendo público para que puedas construir tu portafolio, siempre que revises que no haya información privada.
+No selecciones Add README, Add .gitignore ni Add license. Ya estamos preparando esos archivos localmente.
+
+Haz clic en Create repository.
+Paso 11. Conectar VS Code con GitHub
+GitHub te mostrará una página con instrucciones para conectar tu repositorio.
+
+Nosotros utilizaremos los comandos de la sección de repositorio existente.
+
+Primero, asegúrate de que tu rama principal se llame main:
+git branch -M main
+
+
+Después agrega la dirección de tu repositorio:
+git remote add origin URL_DE_TU_REPOSITORIO
+
+
+Sustituye el texto por la dirección HTTPS que te proporciona GitHub.
+
+Finalmente:
+git push -u origin main
+
+
+Este último comando envía tus commits a GitHub.
